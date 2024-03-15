@@ -1,0 +1,8 @@
+runtime: python312
+service: file-upload-ui
+handlers:
+- url: /
+  static_files: dist/file-upload-ui/index.html
+  upload: dist/file-upload-ui/index.html
+- url: /
+  static_dir: dist/file-upload-ui
